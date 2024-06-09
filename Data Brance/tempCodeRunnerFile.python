@@ -1,0 +1,21 @@
+class A:
+    def __init__(self ,title,value):
+        self.title=title
+        self.value=value
+    def printme(self):
+        print(f"I am {self.title} My value is {self.value}")
+class B(A):
+    def __init__(self,title,value,ml):
+        super().__init__(title,value)
+        self.title=title
+        self.title=value
+        self.ml=ml
+    def printme(self,ml):
+        print(self.title,"   ",self.value,self.ml)
+
+
+
+objb=B("B",2,5)
+
+
+objb.printme()
